@@ -1,0 +1,509 @@
+body {
+    background: url(../img/c4.jpg) no-repeat;
+    background-attachment: cover;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    /* align-items: center; */
+    /* margin: 0; */
+    
+}
+
+/* PAGINA INDEX */
+
+/* div */
+.slideshow {
+    width: 400px;
+    height: 480px;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 30px -10px rgb(17, 17, 17);
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+}
+
+.slideshow:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 1px 1px 2000px rgba(17, 17, 17, 0.9);
+    filter: blur(12px);
+    margin: -20px;
+
+    /* background: inherit no-repeat 50% 50%; */
+    background-size: cover;
+   
+    opacity: 1;
+
+}
+
+/* h2 */
+.hdos {
+    margin: 0 0;
+    padding-bottom: none;
+    width: 100%;
+    color: #88fd44;
+    font-family: 'Helvetica Neue', sans-serif;; 
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    position: inherit;
+    z-index: 3;
+    border-bottom: 2px solid #bbbbc0; 
+}
+
+/* a */
+.ccm {
+    width: 85px;
+    height: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 30px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: 3px solid #a8e616e1;
+    background: #8ce616e1;
+    color: #1e2214;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    display:flex;
+    top: 150px;
+    left: 80px;
+
+
+}
+
+.ccm:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.ccm:hover {
+    width: min-content;
+    background: #38d7ff;
+    border: 2px solid #38c0ff;
+    color: rgb(27, 27, 27);
+    padding: 13px 13px 13px 13px;
+    border-radius: 10px;
+}
+
+/* PAGINA CABIN, CLIENT Y MESSAGE */
+
+/* form */
+.form1 {
+    width: auto;
+    height: auto;
+    background: inherit;
+    position: absolute;
+}
+
+.form {
+    width: 340px;
+    height: 500px;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 30px -10px rgb(17, 17, 17);
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 150px;
+    top:-15px;
+    
+}
+
+.form:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 1px 1px 2000px rgba(17, 17, 17, 0.9);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+/* div */
+.consulta {
+    min-width: 350px;
+    height: 500px;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 30px -10px rgb(17, 17, 17);
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 550px;
+    top:-15px;
+}
+
+.consulta:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 1px 1px 2000px rgba(17, 17, 17, 0.9);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.resultado {
+    width: 100%;
+    height: 88%;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    /* scroll-behavior: auto; */
+    /* box-shadow: inset 0 0 8px 0.5px rgb(22, 22, 22); */
+    color: rgb(226, 226, 226);
+    font-size: 14px;
+    text-align: left;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 0px solid #aaa;
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-color: rgba(54, 54, 54, 0.651) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    
+}
+
+/* h2 */
+h2 {
+    margin: 6px 0;
+    padding-bottom: 15px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #ec145c;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    border-bottom: 1px solid #78788c42; 
+}
+
+/* p */
+.inp {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s;
+    border-bottom: 2px solid #4b9ef1;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    box-shadow: inset 0 0 30px -10px rgb(22, 22, 22);
+    color: rgb(226, 226, 226);
+    font-size: 13px;
+    text-align: left;
+    caret-color: rgb(68, 68, 68);
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 1px 0 0px;
+    font-size: 14px;
+    color: #a8a8a8;
+    padding: 1px;
+    text-align: left;
+    font-style: italic;
+    font-weight: 550;
+    letter-spacing: 0.8px;
+}
+
+/* input */
+input {
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s;
+    border-bottom: 2px solid #4b9ef1;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    box-shadow: inset 0 0 30px -10px rgb(22, 22, 22);
+    color: rgb(226, 226, 226);
+    font-size: 14px;
+    text-align: left;
+    caret-color: rgb(124, 124, 124);
+}
+
+input:focus {
+    border-bottom: 2px solid #c90546;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#messagetext{
+    width: 100%;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s;
+    border-bottom: 2px solid #4baff1;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    box-shadow: inset 0 0 30px -10px rgb(22, 22, 22);
+    color: rgb(255, 250, 250);
+    font-size: 14px;
+    text-align: left;
+    caret-color: rgb(158, 157, 157);
+
+    overflow-y: auto;
+    scrollbar-color: rgba(54, 54, 54, 0.207) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+/* button */
+button {
+    float: right;
+    padding: 7px 11px;
+    margin: 0px 4px 0;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: 2px solid #28ace0;
+    background: #08a1dd;
+    color: #f0ecec;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #38ffb3;
+    border: 2px solid #38ffb3;
+    color: rgb(27, 27, 27);
+    padding: 9px 13px;
+}
+
+/* a */
+a {
+    width: 110px;
+    height: 20px;
+    padding: 6px 6px;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: 2px solid #c90546;
+    background: #c90546;
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    top: 350px;
+    left: 150px;
+
+}
+
+.atras {
+    width: 50px;
+    height: 18px;
+    padding: 1px 1px;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: none;
+    color: #f1f1f1c2;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    top: -10px;
+    left: -50px;
+}
+
+.atras:hover {
+    background: none;
+    border: none;
+    color: rgb(0, 158, 250);
+    font-size: 20px;
+}
+
+.atras:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+/* CONSULTA TABLA */
+.borrar {
+    padding: 1px 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    border: 2px solid #e95732;
+    background: #eb4117;
+    color: #e9f3ec;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.borrar:hover {
+    padding: 2px 6px;
+    background: #37dd7c;
+    border: 1px solid #14db67;
+    color: #e9f3ec;
+    font-size: 12px;
+}
+
+.bt{
+    width: min-content;
+    padding: 0px 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1.5px;
+    border: none;
+    /* background: rgba(255, 255, 255, 0.124);
+    color: #b5b5b5; */
+    background: rgba(0, 0, 0, 0.371);
+    color: #dfdfdfbb;
+    text-align: center;
+    align-items: center;
+    word-wrap: break-word;
+
+}
+.bti{
+    border-radius: 7px 0px 0px 7px;
+    background: rgba(0, 0, 0, 0.522);
+    font-weight: 300;
+}
+
+.btf{
+    border-radius: 0px 7px 7px 0px;
+    max-width: 250px;
+    
+}
+
+.sty{
+    padding: 2px 6px;
+    /* background: #0ff0475d;
+    color: #002108; */
+    background: #4b9ef1;
+    color: #002244;
+    font-style: italic;
+}
+
+.btm{
+    width: 60%;
+}
+
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__slideInDown {
+    --animate-duration: 0.3s;
+  }
+
+/*-------------------------------------*/
+
+/* ::placeholder {
+    color: rgb(128, 128, 128);
+    font-style: italic;
+    font-size: 13px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+/* .botones {
+    width: 100%;
+    height: 50px;
+    z-index: 7;
+    position: relative;
+    top: -150px;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+} */
+
+/* .h2 {
+    margin: 8px 0;
+    padding-bottom: 4px;
+    width: 100%;
+    color: #ec145c;
+    /* border-bottom: 1px solid #78788c; 
+    text-align: center;
+} */
+
+/* .title {
+    width: 700px; 
+    height: 80px;
+    z-index: 1;
+    overflow: hidden;
+    background: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 30px -10px rgb(17, 17, 17);
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* position: relative 
+    z-index: 8;
+    position: absolute;
+    top: -20px;
+    left: 325px;
+} */
+
+/* .title:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 1px 1px 2000px rgba(17, 17, 17, 0.9);
+    filter: blur(10px);
+    margin: -20px;
+} */
+
+
+
+
+
+
